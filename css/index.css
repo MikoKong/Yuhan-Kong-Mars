@@ -1,0 +1,50 @@
+body {
+    background-color: #f4f3ee;
+    color:#2b2d42;
+    font-family:'PT serif ';
+}
+
+.Cartoon-me {
+    margin-left: 600px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+section {
+    margin: 20px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #003049;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #013a63;
+}
+
+.Experience-list li {
+    background-color:#f9eae1;
+    color:#014f86;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.Connect-link a {
+    padding:0;
+    border-radius: 30px;
+}
+
+.logo-gh {
+    width: 30px;
+}
+
+.logo-lk {
+    width: 30px;
+}
