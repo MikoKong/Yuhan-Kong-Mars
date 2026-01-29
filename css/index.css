@@ -5,7 +5,8 @@ body {
 }
 
 .Cartoon-me {
-    margin-left: 600px;
+    display: block;
+    margin: 0 auto;
     width: 100px;
     border-radius: 10px;
 }
@@ -34,6 +35,18 @@ h2 {
     border: none;
     padding: 15px 30px;
     border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Connect-link {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
 }
 
 .Connect-link a {
