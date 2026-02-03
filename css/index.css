@@ -1,3 +1,5 @@
+/* Mobile-first */
+
 body {
     background-color: #f4f3ee;
     color:#2b2d42;
@@ -60,4 +62,54 @@ h2 {
 
 .logo-lk {
     width: 30px;
+}
+
+@media(min-width: 768px) {
+    h2 {
+        font-size: 15px;
+        color: #014f86;
+    }
+    
+    nav {
+        border: 1px solid #b8c8dc;
+        border-radius: 12px;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    
+}
+
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .Experience-list li {
+        padding: 1rem;
+        background-color: #e0f0ff;
+    }
+
+    nav {
+        max-width: 1000px;
+        margin: 50px auto;
+        border-width: 2px;
+    }
+
+    .Experience-list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
