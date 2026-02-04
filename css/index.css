@@ -64,6 +64,15 @@ h2 {
     width: 30px;
 }
 
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    list-style: none;
+    padding: 0 auto;
+    margin: 0;
+}
+
 @media(min-width: 768px) {
     h2 {
         font-size: 15px;
@@ -73,19 +82,23 @@ h2 {
     nav {
         border: 1px solid #b8c8dc;
         border-radius: 12px;
-        padding: 10px 0;
+        padding:0 auto;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     nav ul{
-        display: flex;
-        justify-content: center;
         gap: 30px;
-        list-style: none;
+        justify-content: center;
+    }
+
+    .Experience-list {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: 1fr 1fr;
         padding: 0;
         margin: 0;
     }
-
     
 }
 
@@ -105,11 +118,13 @@ h2 {
         max-width: 1000px;
         margin: 50px auto;
         border-width: 2px;
+        box-sizing: border-box;
     }
 
     .Experience-list {
         display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.25rem;
     }
 }
