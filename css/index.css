@@ -3,24 +3,24 @@
 body {
     background-color: #f4f3ee;
     color:#2b2d42;
-    font-family:'PT serif ';
+    font-family: 'PT serif', serif;
 }
 
 .Cartoon-me {
     display: block;
-    margin: 0 auto;
-    width: 100px;
-    border-radius: 10px;
+    margin: 0 auto 12px;
+    width: 110px;
+    border-radius: 12px;
 }
 
 section {
-    margin: 20px;
-    padding: 30px;
+    margin: 16px;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 500;
     color: #003049;
 }
@@ -29,18 +29,27 @@ h2 {
     font-size: 20px;
     font-weight: 500;
     color: #013a63;
+    margin-bottom: 12px;
+}
+
+.Experience-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .Experience-list li {
     background-color:#f9eae1;
     color:#014f86;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 14px 20px;
+    border-radius: 24px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .Connect-link {
@@ -52,39 +61,33 @@ h2 {
 }
 
 .Connect-link a {
-    padding:0;
-    border-radius: 30px;
+    display: inline-block;
 }
 
-.logo-gh {
-    width: 30px;
-}
-
-.logo-lk {
+.logo-gh, .logo-lk{
     width: 30px;
 }
 
 nav ul{
     display: flex;
-    justify-content: flex-start;
     gap: 15px;
     list-style: none;
-    padding: 0 auto;
+    padding: 0;
     margin: 0;
 }
 
 @media(min-width: 768px) {
     h2 {
-        font-size: 15px;
+        font-size: 18px;
         color: #014f86;
     }
     
     nav {
         border: 1px solid #b8c8dc;
         border-radius: 12px;
-        padding:0 auto;
+        padding:8px 16px;
         margin: 0 auto;
-        box-sizing: border-box;
+        max-width: 800px;
     }
 
     nav ul{
@@ -93,30 +96,27 @@ nav ul{
     }
 
     .Experience-list {
-        display: grid;
-        gap: 25px;
+        gap: 24px;
         grid-template-columns: 1fr 1fr;
-        padding: 0;
-        margin: 0;
     }
     
 }
 
 @media(min-width: 1200px) {
     h1 {
-        font-size: 30px;
+        font-size: 32px;
         text-align: center;
         letter-spacing: 1px;
     }
 
     .Experience-list li {
-        padding: 1rem;
-        background-color: #e0f0ff;
+        padding: 16px 20px;
+        font-size: 1.05rem;
     }
 
     nav {
         max-width: 1000px;
-        margin: 50px auto;
+        margin: 40px auto;
         border-width: 2px;
         box-sizing: border-box;
     }
@@ -126,5 +126,53 @@ nav ul{
         gap: 35px;
         grid-template-columns: 1fr 1fr;
         font-size: 1.25rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 800px;
+}
+
+#skills li {
+    list-style: none;
+    background-color:#f9eae1;
+    color: #014f86;
+    border-radius: 24px;
+    padding: 12px 14px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 768px) {
+    #skills ul {
+        gap: 24px;
+    }
+
+    #skills li {
+        padding: 14px 18px;
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    #skills ul {
+        gap: 35px;
+    }
+
+    #skills li {
+        padding: 16px 20px;
+        font-size: 1.05rem;
     }
 }
