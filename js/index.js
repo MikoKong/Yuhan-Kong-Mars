@@ -1,6 +1,5 @@
 const body = document.querySelector("body");
 const footer = document.createElement("footer");
-
 body.appendChild(footer);
 
 const tody = new Date();
