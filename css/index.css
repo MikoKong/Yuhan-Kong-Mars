@@ -211,3 +211,47 @@ nav ul{
     padding:  6px 0;
 
 }
+
+#Projects ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 800px;
+}
+
+#Projects li {
+    background-color:#f9eae1;
+    color:#014f86;
+    padding: 14px 20px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    #Projects ul {
+        gap: 24px;
+    }
+
+    #Projects li {
+        padding: 14px 18px;
+        font-size: 1rem;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #Projects ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #Projects li{
+        padding: 16px 20px;
+        font-size: 1.05rem;
+    }
+}

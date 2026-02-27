@@ -52,3 +52,27 @@ messageForm.addEventListener('submit', (event) => {
     messageList.appendChild(newMessage);
     event.target.reset();
 });
+
+fetch("https://api.github.com/users/MikoKong/repos")
+    .then(response => {
+        if(!response.ok) {
+            throw new Error(response.status);
+        }
+        return response.json();
+    })
+    .then(repositories => {
+        console.log(repositories);
+
+        const projectSection = document.querySelector("#Projects");
+        const projectList = projectSection.querySelector("ul");
+
+        for(let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+
+    })
+    .catch(error => {
+        console.error(error);
+    });
