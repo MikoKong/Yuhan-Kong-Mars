@@ -4,18 +4,20 @@ body {
     background-color: #f4f3ee;
     color:#2b2d42;
     font-family: 'PT serif', serif;
+    padding-top: 60px;
 }
 
 .Cartoon-me {
     display: block;
     margin: 0 auto 12px;
-    width: 110px;
+    width: 150px;
     border-radius: 12px;
 }
 
 section {
-    margin: 16px;
+    margin: 40px auto;
     padding: 20px;
+    max-width: 800px;;
 }
 
 h1 {
@@ -30,6 +32,8 @@ h2 {
     font-weight: 500;
     color: #013a63;
     margin-bottom: 12px;
+    border-bottom: 2px solid #8ea6b4;
+    padding-bottom: 6px;
 }
 
 .Experience-list {
@@ -42,7 +46,7 @@ h2 {
 }
 
 .Experience-list li {
-    background-color:#f9eae1;
+    background-color:#e8f1f5;
     color:#014f86;
     padding: 14px 20px;
     border-radius: 24px;
@@ -68,13 +72,39 @@ h2 {
     width: 30px;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 800px;
+    background-color: #f4f3ee;
+    z-index: 1000;
+    padding: 8px 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #b8c8dc;
+    border-radius: 12px;
+}
+
+
 nav ul{
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
+footer {
+    text-align: center;
+    padding: 12px 0;
+    background-color: #f4f3ee;
+    color: #2b2d42;
+    font-size: 0.9rem;
+    border-top: 1px solid #ccc;
+}
+
 
 @media(min-width: 768px) {
     h2 {
@@ -98,6 +128,10 @@ nav ul{
     .Experience-list {
         gap: 24px;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .Cartoon-me {
+         width: 180px;
     }
     
 }
@@ -130,9 +164,13 @@ nav ul{
         justify-content: center;
         align-items: center;
     }
+
+    .Cartoon-me {
+        width: 200px;
+    }
 }
 
-#skills ul {
+#Skills ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
@@ -142,9 +180,9 @@ nav ul{
     max-width: 800px;
 }
 
-#skills li {
+#Skills li {
     list-style: none;
-    background-color:#f9eae1;
+    background-color:#e8f1f5;
     color: #014f86;
     border-radius: 24px;
     padding: 12px 14px;
@@ -156,22 +194,22 @@ nav ul{
 }
 
 @media(min-width: 768px) {
-    #skills ul {
+    #Skills ul {
         gap: 24px;
     }
 
-    #skills li {
+    #Skills li {
         padding: 14px 18px;
         font-size: 1rem;
     }
 }
 
 @media(min-width: 1200px) {
-    #skills ul {
+    #Skills ul {
         gap: 35px;
     }
 
-    #skills li {
+    #Skills li {
         padding: 16px 20px;
         font-size: 1.05rem;
     }
@@ -184,7 +222,7 @@ nav ul{
     max-width: 400px;
 }
 
-#LeaveaMessage input {
+#LeaveaMessage input, textarea {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #2b2d42;
@@ -196,7 +234,7 @@ nav ul{
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    background-color: #f9eae1;
+    background-color: #e8f1f5;
 }
 
 #messages ul {
@@ -223,7 +261,7 @@ nav ul{
 }
 
 #Projects li {
-    background-color:#f9eae1;
+    background-color:#e8f1f5;
     color:#014f86;
     padding: 14px 20px;
     border-radius: 24px;
